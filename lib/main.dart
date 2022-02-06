@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // import 'home.dart';
-import 'login_page.dart';
-import 'signup_page.dart';
-import 'welcome_page.dart';
+import 'login.dart';
+import 'signup.dart';
+import 'welcome.dart';
 
 void main() => runApp(Soteria());
 

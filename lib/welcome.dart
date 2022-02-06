@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soteria/login_page.dart';
-import 'package:soteria/signup_page.dart';
+import 'package:soteria/login.dart';
+import 'package:soteria/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -13,11 +13,10 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  Widget _submitButton() {
+  Widget _loginButton() {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage()));
+        Navigator.pushNamed(context, '/login');
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -105,7 +104,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(
                 height: 80,
               ),
-              _submitButton(),
+              _loginButton(),
               SizedBox(
                 height: 20,
               ),

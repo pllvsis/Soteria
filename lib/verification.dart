@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:soteria/login_page.dart';
+import 'package:soteria/login.dart';
 
 class VerificationPage extends StatefulWidget {
   const VerificationPage({Key? key, this.title}) : super(key: key);

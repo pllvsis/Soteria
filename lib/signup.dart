@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:soteria/login_page.dart';
-import 'package:soteria/verification_page.dart';
+import 'package:soteria/login.dart';
+import 'package:soteria/verification.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key, this.title}) : super(key: key);
