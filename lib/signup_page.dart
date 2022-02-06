@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:soteria/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:soteria/login_page.dart';
 import 'package:soteria/verification_page.dart';
 
 class SignUpPage extends StatefulWidget {
-  SignUpPage({Key? key, this.title}) : super(key: key);
+  const SignUpPage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -107,9 +107,75 @@ class _SignUpPageState extends State<SignUpPage> {
     return Column(
       children: <Widget>[
         _entryField("Username"),
-        _entryField("Email id"),
+        _entryField("Email ID"),
         _entryField("Password", isPassword: true),
       ],
+    );
+  }
+
+  Widget _divider() {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        children: const <Widget>[
+          SizedBox(
+            width: 20,
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Divider(
+                thickness: 1,
+              ),
+            ),
+          ),
+          Text('or'),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Divider(
+                thickness: 1,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 20,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _accountExistsWidget() {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LoginPage()));
+      },
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 20),
+        padding: EdgeInsets.all(15),
+        alignment: Alignment.bottomCenter,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Text(
+              'Already have an account ?',
+              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              'Sign In',
+              style: TextStyle(
+                  color: Color(0xfff79c4f),
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -117,7 +183,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: height,
         child: Stack(
           children: <Widget>[
@@ -138,7 +204,10 @@ class _SignUpPageState extends State<SignUpPage> {
                       height: 20,
                     ),
                     _nextButton(),
-                    SizedBox(height: height * .14),
+                    SizedBox(height: height * .055),
+                    _divider(),
+                    SizedBox(height: height * .025),
+                    _accountExistsWidget(),
                   ],
                 ),
               ),

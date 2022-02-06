@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:soteria/login_page.dart';
 
 class VerificationPage extends StatefulWidget {
-  VerificationPage({Key? key, this.title}) : super(key: key);
+  const VerificationPage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -98,7 +98,7 @@ class _VerificationPage extends State<VerificationPage> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: height,
         child: Stack(
           children: <Widget>[

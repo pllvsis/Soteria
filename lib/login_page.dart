@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:soteria/signup_page.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key, this.title}) : super(key: key);
+  const LoginPage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Row(
-        children: <Widget>[
+        children: const <Widget>[
           SizedBox(
             width: 20,
           ),
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
         alignment: Alignment.bottomCenter,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: const <Widget>[
             Text(
               'Don\'t have an account ?',
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
@@ -176,7 +176,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-        body: Container(
+        body: SizedBox(
       height: height,
       child: Stack(
         children: <Widget>[

@@ -3,15 +3,17 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'welcome_page.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Soteria());
 
-class MyApp extends StatelessWidget {
+class Soteria extends StatelessWidget {
+  const Soteria({Key? key}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Soteria',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: GoogleFonts.latoTextTheme(textTheme).copyWith(

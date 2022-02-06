@@ -4,7 +4,7 @@ import 'package:soteria/signup_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
-  WelcomePage({Key? key, this.title}) : super(key: key);
+  const WelcomePage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
