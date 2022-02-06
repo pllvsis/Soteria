@@ -5,7 +5,9 @@ import 'home.dart';
 import 'login.dart';
 import 'signup.dart';
 import 'welcome.dart';
-import 'club.dart';
+import 'going_out.dart';
+import 'settings.dart';
+import 'emergency_contact_settings.dart';
 
 void main() => runApp(Soteria());
 
@@ -30,8 +32,11 @@ class Soteria extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/register': (context) => SignUpPage(),
         '/home': (context) => HomePage(),
-        '/goingOut': (context) => ClubPage()
+        '/goingOut': (context) => ClubPage(),
         // 'settings': (context) => SettingsPage(),
+        '/settings': (context) => SettingsPage(),
+        '/settings/emergency_contact_settings': (context) =>
+            EmergencyContactSettingsPage(),
       },
     );
   }
