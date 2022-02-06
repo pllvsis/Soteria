@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:soteria/login.dart';
-import 'package:soteria/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {

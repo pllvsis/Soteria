@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// import 'home.dart';
+import 'home.dart';
 import 'login.dart';
 import 'signup.dart';
 import 'welcome.dart';
@@ -29,7 +29,7 @@ class Soteria extends StatelessWidget {
         '/welcome': (context) => WelcomePage(),
         '/login': (context) => LoginPage(),
         '/register': (context) => SignUpPage(),
-        // '/home': (context) => HomePage(),
+        '/home': (context) => HomePage(),
       },
     );
   }
