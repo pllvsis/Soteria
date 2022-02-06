@@ -107,7 +107,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return Column(
       children: <Widget>[
         _entryField("Username"),
-        _entryField("Email ID"),
+        _entryField("Email"),
         _entryField("Password", isPassword: true),
       ],
     );
@@ -149,8 +149,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget _accountExistsWidget() {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage()));
+        Navigator.popAndPushNamed(context, '/login');
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),
@@ -160,11 +159,11 @@ class _SignUpPageState extends State<SignUpPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
             Text(
-              'Already have an account ?',
+              'Already have an account?',
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
             ),
             SizedBox(
-              width: 10,
+              width: 5,
             ),
             Text(
               'Sign In',

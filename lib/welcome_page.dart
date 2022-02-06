@@ -44,8 +44,7 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget _signUpButton() {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SignUpPage()));
+        Navigator.pushNamed(context, '/signup');
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -56,7 +55,7 @@ class _WelcomePageState extends State<WelcomePage> {
           border: Border.all(color: Colors.white, width: 2),
         ),
         child: Text(
-          'Register now',
+          'Register',
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
