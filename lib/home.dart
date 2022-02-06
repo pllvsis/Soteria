@@ -15,7 +15,7 @@ class _HomeState extends State<HomePage> {
       height: 25.0,
       child: ElevatedButton.icon(
         onPressed: () {
-          // Navigator.pushNamed(context, pageRoute);
+          Navigator.pushNamed(context, pageRoute);
         },
         icon: Icon(icon),
         label: Text(
