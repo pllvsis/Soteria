@@ -186,13 +186,13 @@ class _SignUpPageState extends State<SignUpPage> {
         child: Stack(
           children: <Widget>[
             Container(
+              margin: const EdgeInsets.only(top: 100.0),
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    SizedBox(height: height * .1),
                     _title(),
                     SizedBox(
                       height: 50,

@@ -184,13 +184,13 @@ class _LoginPageState extends State<LoginPage> {
       child: Stack(
         children: <Widget>[
           Container(
+            margin: const EdgeInsets.only(top: 100.0),
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(height: height * .2),
                   _title(),
                   SizedBox(height: 50),
                   _emailPasswordWidget(),

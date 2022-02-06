@@ -11,7 +11,6 @@ void main() => runApp(Soteria());
 class Soteria extends StatelessWidget {
   const Soteria({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
@@ -30,6 +29,7 @@ class Soteria extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/register': (context) => SignUpPage(),
         '/home': (context) => HomePage(),
+        'settings': (context) => SettingsPage(),
       },
     );
   }

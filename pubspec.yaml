@@ -1,4 +1,4 @@
-name: Soteria
+name: soteria
 description: Developed with women safety in mind, Soteria provides servies to help women feel safer and get help easier
 
 # The following line prevents the package from being accidentally published to
@@ -29,6 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  settings_ui: ^2.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
