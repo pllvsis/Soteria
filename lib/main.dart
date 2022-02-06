@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'home.dart';
 import 'login.dart';
+import 'menu.dart';
 import 'signup.dart';
 import 'welcome.dart';
 import 'going_out.dart';
@@ -37,6 +38,7 @@ class Soteria extends StatelessWidget {
         '/settings': (context) => SettingsPage(),
         '/settings/emergency_contact_settings': (context) =>
             EmergencyContactSettingsPage(),
+        '/menu': (context) => MenuPage()
       },
     );
   }

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ClubPage extends StatefulWidget {
   const ClubPage({Key? key, this.title}) : super(key: key);
@@ -53,7 +51,9 @@ class _ClubPageState extends State<ClubPage> {
 
   Widget _locationCard(String location) {
     return InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, '/location');
+        },
         child: Container(
           height: 60,
           decoration: BoxDecoration(
