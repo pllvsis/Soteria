@@ -1,7 +1,6 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:soteria/login_page.dart';
 
 class VerificationPage extends StatefulWidget {
   VerificationPage({Key? key, this.title}) : super(key: key);
@@ -39,7 +38,7 @@ class _VerificationPage extends State<VerificationPage> {
               // uploadImageToFirebase(context),
             },
             child: Text('Upload Valid ID',
-                style: TextStyle(fontSize: 20, color: Colors.white)),
+                style: TextStyle(fontSize: 20, color: Colors.black)),
           ),
         )
       ],
@@ -56,7 +55,7 @@ class _VerificationPage extends State<VerificationPage> {
               // uploadImageToFirebase(context),
             },
             child: Text('Capture Image',
-                style: TextStyle(fontSize: 20, color: Colors.white)),
+                style: TextStyle(fontSize: 20, color: Colors.black)),
           ),
         )
       ],
@@ -66,8 +65,10 @@ class _VerificationPage extends State<VerificationPage> {
   Widget _submitButton() {
     return InkWell(
         onTap: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => VerificationPage()));
+          Navigator.pop(context);
+          Navigator.pop(context);
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => LoginPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width,
@@ -87,7 +88,7 @@ class _VerificationPage extends State<VerificationPage> {
                   end: Alignment.centerRight,
                   colors: [Color(0xff6a25a6), Color(0xfff7892b)])),
           child: Text(
-            'Next',
+            'Submit',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
         ));
